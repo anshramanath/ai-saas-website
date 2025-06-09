@@ -1,5 +1,5 @@
 import { LoadingCarousel } from "@/components/LoadingCarousel"
 
 export function LoadingCarouselDemo() {
-  return <LoadingCarousel autoplayInterval={7000} showNavigation={true}/>
+  return <LoadingCarousel autoplayInterval={6000}/>
 }

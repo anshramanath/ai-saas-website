@@ -35,6 +35,25 @@ const FloatingPanelContext = createContext<
   FloatingPanelContextType | undefined
 >(undefined)
 
+function useResponsivePanelPosition() {
+  const [style, setStyle] = useState({ top: "65%", left: "23%" })
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setStyle({ top: "78%", left: "45.5%" })
+      } else {
+        setStyle({ top: "65%", left: "23%" })
+      }
+    }
+    handleResize() // Run once on mount
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
+
+  return style
+}
+
 function useFloatingPanel() {
   const context = useContext(FloatingPanelContext)
   if (!context) {
@@ -158,6 +177,8 @@ export function FloatingPanelContent({
     useFloatingPanel()
   const contentRef = useRef<HTMLDivElement>(null)
 
+  const responsiveStyle = useResponsivePanelPosition()
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -202,9 +223,8 @@ export function FloatingPanelContent({
               className
             )}
             style={{
+              ...responsiveStyle,
               borderRadius: 12,
-              top: "78%",
-              left: "37.5%",
               transform: "translate(-50%, -50%)",
               transformOrigin: "center",
             }}

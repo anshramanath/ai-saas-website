@@ -587,13 +587,13 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step1img1Class)}
                 src={image.step1light1}
-                preset="slideInLeft"
+                // preset="slideInLeft"
               />
               <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step1img2Class)}
                 src={image.step1light2}
-                preset="slideInRight"
+                // preset="slideInRight"
                 delay={0.1}
               />
             </motion.div>
@@ -617,13 +617,13 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step2img1Class, "rounded-2xl")}
                 src={image.step2light1}
-                preset="fadeInScale"
+                // preset="fadeInScale"
               />
               <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step2img2Class, "rounded-2xl")}
                 src={image.step2light2}
-                preset="fadeInScale"
+                // preset="fadeInScale"
                 delay={0.1}
               />
             </motion.div>
@@ -642,7 +642,7 @@ export function FeatureCarousel({
               alt={image.alt}
               className={clsx(step3imgClass, "rounded-xl -mt-20 md:-mt-30")}
               src={image.step3light}
-              preset="fadeInScale"
+              // preset="fadeInScale"
               onAnimationComplete={handleAnimationComplete}
             />
           )
@@ -668,7 +668,7 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step4imgClass, "rounded-xl")}
                 src={image.step4light}
-                preset="fadeInScale"
+                // preset="fadeInScale"
                 delay={0.1}
               />
             </motion.div>
