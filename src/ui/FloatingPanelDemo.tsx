@@ -28,10 +28,10 @@ export function FloatingPanelDemo() {
     <>  
       <FloatingPanelRoot>
         <FloatingPanelTrigger
-          title="Want to talk?"
+          title="Lets Talk"
           className="flex items-center justify-center space-x-2 px-4 py-2 bg-white text-black rounded-md hover:bg-neutral-100 transition-colors shadow-md w-full max-w-xs"
         >
-          <span>Want to talk?</span>
+          <span>Click Me</span>
         </FloatingPanelTrigger>
 
         <FloatingPanelContent className="w-56">

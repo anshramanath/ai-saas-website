@@ -32,7 +32,7 @@ export default function Home() {
 
       {/* Call to Action */}
       <section>
-        <TextAnimationDemo text="Interested?" />
+        <TextAnimationDemo text="Want to Learn More?" />
         <div className="flex justify-center">
           <FloatingPanelDemo />
         </div>
