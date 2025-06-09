@@ -591,13 +591,13 @@ export function FeatureCarousel({
             >
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step1img1Class)}
+                className={clsx(step1img1Class, "rounded-2xl ml-[-65px]")}
                 src={image.step1light1}
                 preset="none"
               />
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step1img2Class)}
+                className={clsx(step1img2Class, "rounded-2xl -mt-20")}
                 src={image.step1light2}
                 preset="none"
                 delay={0.1}
@@ -621,13 +621,13 @@ export function FeatureCarousel({
             >
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step2img1Class, "rounded-2xl")}
+                className={clsx(step2img1Class, "rounded-2xl -mt-10")}
                 src={image.step2light1}
                 preset="none"
               />
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step2img2Class, "rounded-2xl")}
+                className={clsx(step2img2Class, "rounded-2xl -mt-20 ml-[-75px]")}
                 src={image.step2light2}
                 preset="none"
                 delay={0.1}
@@ -646,7 +646,7 @@ export function FeatureCarousel({
           return (
             <AnimatedStepImage
               alt={image.alt}
-              className={clsx(step3imgClass, "rounded-xl -mt-20 md:-mt-30")}
+              className={clsx(step3imgClass, "rounded-2xl -mt-30")}
               src={image.step3light}
               preset="none"
               onAnimationComplete={handleAnimationComplete}
@@ -672,7 +672,7 @@ export function FeatureCarousel({
             >
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step4imgClass, "rounded-xl")}
+                className={clsx(step4imgClass, "rounded-2xl -mt-20")}
                 src={image.step4light}
                 preset="none"
                 delay={0.1}
