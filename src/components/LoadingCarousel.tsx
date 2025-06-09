@@ -311,7 +311,7 @@ export function LoadingCarousel({
                 ))}
               </div>
             )}
-            <div className="flex items-center space-x-2 text-primary whitespace-nowrap">
+            <div className="flex flex-col sm:flex-row items-start space-x-0 sm:space-x-2 text-primary whitespace-normal">
               {backgroundTips ? (
                 <span className="text-sm font-medium">
                   Tip {current + 1}/{displayTips?.length || 0}
