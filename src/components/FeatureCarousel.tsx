@@ -145,6 +145,12 @@ const ANIMATION_PRESETS = {
       mass: 0.5,
     },
   },
+  none: {
+    initial: {},
+    animate: {},
+    exit: {},
+    transition: { duration: 0 },
+  }
 } as const
 
 type AnimationPreset = keyof typeof ANIMATION_PRESETS
@@ -552,7 +558,7 @@ export function FeatureCarousel({
   step4imgClass = defaultClasses.step4img,
   ...props
 }: FeatureCarouselProps) {
-  const { currentNumber: step, increment } = useNumberCycler()
+  const { currentNumber: step, increment } = useNumberCycler(TOTAL_STEPS, 5000)
   const [isAnimating, setIsAnimating] = useState(false)
 
   const handleIncrement = () => {
@@ -587,13 +593,13 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step1img1Class)}
                 src={image.step1light1}
-                // preset="slideInLeft"
+                preset="none"
               />
               <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step1img2Class)}
                 src={image.step1light2}
-                // preset="slideInRight"
+                preset="none"
                 delay={0.1}
               />
             </motion.div>
@@ -617,13 +623,13 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step2img1Class, "rounded-2xl")}
                 src={image.step2light1}
-                // preset="fadeInScale"
+                preset="none"
               />
               <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step2img2Class, "rounded-2xl")}
                 src={image.step2light2}
-                // preset="fadeInScale"
+                preset="none"
                 delay={0.1}
               />
             </motion.div>
@@ -642,7 +648,7 @@ export function FeatureCarousel({
               alt={image.alt}
               className={clsx(step3imgClass, "rounded-xl -mt-20 md:-mt-30")}
               src={image.step3light}
-              // preset="fadeInScale"
+              preset="none"
               onAnimationComplete={handleAnimationComplete}
             />
           )
@@ -668,7 +674,7 @@ export function FeatureCarousel({
                 alt={image.alt}
                 className={clsx(step4imgClass, "rounded-xl")}
                 src={image.step4light}
-                // preset="fadeInScale"
+                preset="none"
                 delay={0.1}
               />
             </motion.div>
