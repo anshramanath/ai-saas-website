@@ -43,12 +43,12 @@ export function FeatureCarouselDemo() {
             )}
             // Example images
             image={{
-              step1light1: "/media/img.png",
-              step1light2: "/media/img.png",
-              step2light1: "/media/img.png",
-              step2light2: "/media/img.png",
-              step3light: "/media/img.png",
-              step4light: "/media/img.png",
+              step1light1: "/media/desktop.jpeg",
+              step1light2: "/media/laptop.webp",
+              step2light1: "/media/phone.jpeg",
+              step2light2: "/media/security.webp",
+              step3light: "/media/vr.webp",
+              step4light: "/media/wires.webp",
               alt: "Feature demonstration",
             }}
             // Card styling

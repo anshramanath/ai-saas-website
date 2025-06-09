@@ -20,7 +20,7 @@ export function FloatingPanelDemo() {
       icon: <Calendar className="w-4 h-4" />,
       label: "Book a call",
       action: () =>
-        window.open("https://calendly.com/YOUR-CALENDLY-USERNAME", "_blank"),
+        window.open("https://calendly.com/covalent-nick/30min", "_blank"),
     },
   ]
 

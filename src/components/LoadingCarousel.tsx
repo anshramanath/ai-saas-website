@@ -47,27 +47,27 @@ interface LoadingCarouselProps {
 const defaultTips: Tip[] = [
   {
     text: "Backend snippets. Shadcn style headless components.. but for your backend.",
-    image: "/media/img.png",
+    image: "/media/desktop.jpeg",
     url: "https://www.newcult.co/backend",
   },
   {
     text: "Create your first directory app today. AI batch scripts to process 100s of urls in seconds.",
-    image: "/media/img.png",
+    image: "/media/laptop.webp",
     url: "https://www.newcult.co/templates/cult-seo",
   },
   {
     text: "Cult landing page template. Framer motion, shadcn, and tailwind.",
-    image: "/media/img.png",
+    image: "/media/phone.jpeg",
     url: "https://www.newcult.co/templates/cult-landing-page",
   },
   {
     text: "Vector embeddings, semantic search, and chat based vector retrieval on easy mode.",
-    image: "/media/img.png",
+    image: "/media/security.webp",
     url: "https://www.newcult.co/templates/manifest",
   },
   {
     text: "SEO analysis app. Scraping, analysis, insights, and AI recommendations.",
-    image: "/media/img.png",
+    image: "/media/vr.webp",
     url: "https://www.newcult.co/templates/cult-seo",
   },
 ]
